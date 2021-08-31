@@ -2,6 +2,8 @@
 %h1 All Movies
 
 %table#movies
+  = link_to 'Movie Title ', movies_path(:sort_by=>"title")
+  = link_to 'Release Date', movies_path(:sort_by=>"date")
   %thead
     %tr
       %th Movie Title
